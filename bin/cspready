@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var program = require('commander');
+var version = require('../package.json').version;
+
+// CLI
+program
+  .version(version)
+  .usage('[options]')
+  .option('-v, --version', 'show version')
+  .parse(process.argv);
+
+

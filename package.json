@@ -2,10 +2,16 @@
   "name": "cspready",
   "version": "0.0.1",
   "private": true,
-  "scripts": {
-    "start": "./node_modules/.bin/supervisor -w routes,views,public,. -e js,css,ejs ./bin/www"
-  },
+    "description":"CSP ready tester",
+  "main": "bin/cspready",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://t-ashula.mit-license.org/"
+    }
+  ],
   "dependencies": {
+    "commander": "~2.1.0",
     "bluebird": "^2.2.2",
     "helmet": "^0.4.0",
     "phantomjs": "^1.9.7-15",
